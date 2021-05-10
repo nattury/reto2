@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Academia Geek 🚀</title>
+  <link href="https://fonts.googleapis.com/css2?family=Patrick+Hand&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./styles/style.css" />
+  <link rel="shortcut icon"
+    href="https://images.vexels.com/media/users/3/198184/isolated/lists/897d27fc262f890552a3f404ff2b4c28-icono-de-trazo-de-carta-de-amor.png"
+    type="image/x-icon">
+</head>
+<body>
+  <!-- Header -->
+  <header>
+    <h1 id="title">freeCodeCamp Survey Form</h1>
+    <p id="description">
+      Thank you for taking the time to help us improve the platform
+    </p>
+  </header>
+<!-- Form -->
+  <form id="survey-form" action="">
+    <label id="name-label" for="name">Name:</label><br>
+    <input class="firstPart" required id="name" autofocus autocomplete="Name" placeholder="Enter your name"
+      type="text" /><br>
+
+    <label id="email-label" for="email">Email:</label><br>
+    <input required class="firstPart" id="email" type="email" autocomplete="email" placeholder="Enter your email"
+      type="text" /><br>
+
+    <label id="number-label" for="age">Age (Optional):</label><br>
+    <input autocomplete="number" type="number" id="number" min="18" max="105" class="firstPart" placeholder="Age"
+      type="text" /><br>
+
+    <label for="firstQuestion" class="bold">Which option best describes your current role?</label><br>
+    <select id="firstQuestion" name="firstQuestion">
+      <option value="select an option" selected disabled>select current role</option>
+      <option value="Student">Student</option>
+      <option value="Full time Job">Full time Job</option>
+      <option value="Full time Learner">Full time Learner</option>
+      <option value="I prefer no to say">I prefer no to say</option>
+      <option value="Other">Other</option>
+    </select>
+
+    <br>
+    <label for="secondQuestion" class="bold">Would you recommend freeCodeCamp to a friend?</label><br>
+    <input type="radio" id="Definitely" name="secondQuestion" value="Definitely" />
+    <label for="secondQuestion">Definitely</label><br>
+    <input type="radio" id="Maybe" name="secondQuestion" value="Maybe" />
+    <label for="secondQuestion">Maybe</label><br>
+    <input type="radio" id="Not sure" name="secondQuestion" value="Not sure" />
+    <label for="secondQuestion">Not sure</label>
+
+    <br>
+    <label for="thirdQuestion" class="bold">What is your favorite feature of freeCodeCamp?</label>
+    <br>
+    <select id="thirdQuestion" name="thirdQuestion">
+      <option value="select an option" selected disabled>select an option</option>
+      <option value="Changelles">Challenges</option>
+      <option value="Projects">Projects</option>
+      <option value="Comunity">Comunity</option>
+      <option value="Open source">Open source</option>
+      
+    </select>
+    <br>
+    <label for="fourthQuestion" class="bold">What is your favote feature of freeCodeCamp?<small>
+        (Check all that apply)</small></label>
+    <br>
+
+    <input type="checkbox" id="fourthQuestion" name="o1" value="o1" />
+    <label for="o1"> Front-end Projects</label><br>
+    <input type="checkbox" id="fourthQuestion" name="o2" value="o2" />
+    <label for="o2">Back-end Projects</label><br>
+    <input type="checkbox" id="fourthQuestion" name="o3" value="o3" />
+    <label for="o3"> Data Visualization</label>
+    <br>
+    <input type="checkbox" id="fourthQuestion" name="o4" value="o4" />
+    <label for="o4"> Challenges</label>
+    <br>
+    <input type="checkbox" id="fourthQuestion" name="o5" value="o5" />
+    <label for="o5"> Open Source Community </label>
+    <br>
+    <input type="checkbox" id="fourthQuestion" name="o6" value="o6" />
+    <label for="o6"> Gitter help rooms</label>
+    <br>
+    <input type="checkbox" id="fourthQuestion" name="o7" value="o7" />
+    <label for="o7"> Videos</label>
+    <br>
+    <input type="checkbox" id="fourthQuestion" name="o8" value="o8" />
+    <label for="o8">City Meetups</label>
+    <br>
+    <input type="checkbox" id="fourthQuestion" name="o9" value="o9" />
+    <label for="o9"> Wiki</label>
+    <br>
+    <input type="checkbox" id="fourthQuestion" name="o10" value="o10" />
+    <label for="o10"> Forum</label>
+    <br>
+    <input type="checkbox" id="fourthQuestion" name="o11" value="o11" />
+    <label for="o11">Additional Courses</label><br>
+
+    <label for="comment" class="bold">Any comment or suggestion?</label><br>
+    <textarea placeholder="Enter your comment or description here..." rows="10" cols="30" > </textarea>
+    <br>
+    <input id="submit" class="submit" type="submit" value="Submit!" />
+  </form>
+</body>
+
+</html>
